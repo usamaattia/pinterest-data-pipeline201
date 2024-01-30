@@ -1,0 +1,2 @@
+from user_posting_emulation import run_infinite_post_data_loop
+run_infinite_post_data_loop()
