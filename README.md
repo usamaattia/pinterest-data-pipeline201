@@ -55,3 +55,22 @@ Document how to use the Pinterest Data Pipeline. Include any specific instructio
 
 Outline the structure of your project, detailing the purpose of each significant directory or file. For example:
 
+## Custom Plugin
+
+### Step 1: Find the S3 Bucket
+
+1. Go to the [S3 console](https://s3.console.aws.amazon.com/).
+
+2. Find the bucket that contains your UserId. The bucket name should have the format: `user-<your_UserId>-bucket`. Make a note of the bucket name.
+
+### Step 2: Download and Copy Confluent.io Amazon S3 Connector
+
+1. On your EC2 client, download the Confluent.io Amazon S3 Connector. You can typically find this connector on the Confluent Hub or the Confluent website.
+
+   ```bash
+   wget https://d1i4a15mxbxib1.cloudfront.net/api/plugins/confluentinc/kafka-connect-s3/versions/10.0.3/confluentinc-kafka-connect-s3-10.0.3.zip
+
+2. Copy the downloaded Confluent.io Amazon S3 Connector JAR file to the S3 bucket you identified in Step 1.
+
+    ```bash
+    aws s3 cp ./confluentinc-kafka-connect-s3-10.0.3.zip s3://<BUCKET_NAME>/kafka-connect-s3/
