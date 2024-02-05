@@ -74,3 +74,39 @@ Outline the structure of your project, detailing the purpose of each significant
 
     ```bash
     aws s3 cp ./confluentinc-kafka-connect-s3-10.0.3.zip s3://<BUCKET_NAME>/kafka-connect-s3/
+
+
+## Spark Queries
+
+### Query 1
+Find the most popular Pinterest category people post to based on their country.
+
+### Query 2
+Find how many posts each category had between 2018 and 2022.
+
+### Query 3
+Find the user with the most followers in each country.
+
+### Query 4
+Find the country with the user with the most followers.
+
+### Query 5
+Find the most popular category for different age groups.
+
+### Query 6
+Find the median follower count for different age groups.
+
+### Query 7
+Find how many users have joined each year.
+
+### Query 8
+Find the median follower count of users have joined between 2015 and 2020.
+
+### Query 9
+Find the most popular category for different age groups.
+
+### Query 10
+Find the median follower count for different age groups.
+
+### Query 11
+Find the median follower count of users that have joined between 2015 and 2020, based on which age group they are part of.
