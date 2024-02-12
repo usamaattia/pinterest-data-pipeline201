@@ -6,7 +6,6 @@ import boto3
 import json
 import sqlalchemy
 from sqlalchemy import text
-import requests
 
 
 random.seed(100)
